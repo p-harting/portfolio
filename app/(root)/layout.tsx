@@ -1,5 +1,6 @@
-import "@/app/globals.css";
+import "@/app/globals.css"
 import Navbar from "@/components/Navbar";
+import { hanken } from "@/components/fonts";
 
 export default function RootLayout({
   children,
@@ -8,7 +9,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      <body>
+      <body className={`${hanken.className}`}>
         <header>
           <Navbar />
         </header>
