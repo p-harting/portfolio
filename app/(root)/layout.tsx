@@ -8,10 +8,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      <header>
-        <Navbar />
-      </header>
       <body>
+        <header>
+          <Navbar />
+        </header>
         {children}
       </body>
     </html>
