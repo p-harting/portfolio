@@ -3,7 +3,6 @@ import { createClient } from '@/utils/supabase/server';
 export default async function Page() {
     const supabase = await createClient();
     const { data } = await supabase.from("projects").select();
-    console.log(data)
 
     const projects = data?.map(project => {
       return(
