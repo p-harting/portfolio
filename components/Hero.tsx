@@ -1,11 +1,9 @@
 import Image from "next/image"
-import { getDictionary } from "@/utils/get-dictionary"
-import { Locale } from "@/i18n-config"
 
-export default async function Hero({ params }: { params: { lang: Locale } })
+import { Dictionary } from "@/i18n-config";
+
+export default function Hero({ dictionary }: { dictionary: Dictionary["hero"] })
 {
-    const { lang } = params;
-    const dictionary = await getDictionary(lang);
 
     return (
         <div className="flex flex-row max-w-6xl mt-12">
@@ -13,7 +11,7 @@ export default async function Hero({ params }: { params: { lang: Locale } })
                 <h2 className="text-white text-3xl"><span className="text-purple-500">Fullstack Engineer</span> aus Deutschland</h2>
                 <h1 className="text-white text-7xl">Hallo, mein Name ist <span className="text-purple-500">Pascal Harting</span></h1>
                 <div className="border border-solid border-white rounded-4xl py-4 px-8 text-white text-xl w-2xs">
-                    <p>{dictionary.hero.downlaod}</p>
+                    <p>{dictionary.download}</p>
                 </div>
                 <p className="text-white text-xl">Ich entwickel <span className="underline">schnelle</span> und <span className="underline">skalierbare</span> Apps mit dem Optimierungsfokus eines Marketers.</p>
             </div>
