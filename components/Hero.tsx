@@ -2,9 +2,9 @@ import Image from "next/image"
 import { getDictionary } from "@/utils/get-dictionary"
 import { Locale } from "@/i18n-config"
 
-export default async function Hero(props: { params: { lang: Locale } })
+export default async function Hero({ params }: { params: { lang: Locale } })
 {
-    const { lang } = await props.params;
+    const { lang } = params;
     const dictionary = await getDictionary(lang);
 
     return (
