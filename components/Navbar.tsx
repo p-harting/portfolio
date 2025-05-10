@@ -2,10 +2,10 @@
 
 import Link from "next/link"
 import { useParams } from "next/navigation"
-import { Locale } from "@/i18n-config"
+import { Locale, Dictionary } from "@/i18n-config"
 import LanguageSelector from "./LanguageSelector"
 
-export default function Navbar() {
+export default function Navbar({ dictionary }: { dictionary: Dictionary["navbar"] }) {
   const params = useParams()
   const currentLang = params?.lang as Locale || 'de'
     return (
@@ -14,19 +14,19 @@ export default function Navbar() {
                 <div className="border border-solid border-white rounded-4xl py-4 px-8">
                     <ul className="flex text-white text-xl gap-6">
                         <li>
-                            <Link href="/">Home</Link>
+                            <Link href="/">{dictionary.home}</Link>
                         </li>
                         <li>
-                            <Link href="/portfolio">Portfolio</Link>
+                            <Link href="/portfolio">{dictionary.portfolio}</Link>
                         </li>
                         <li>
-                            <Link href="/ueber-mich">Über mich</Link>
+                            <Link href="/ueber-mich">{dictionary.about}</Link>
                         </li>
                         <li>
-                            <Link href="/blog">Blog</Link>
+                            <Link href="/blog">{dictionary.blog}</Link>
                         </li>
                         <li>
-                            <Link href="/kontakt">Kontakt</Link>
+                            <Link href="/kontakt">{dictionary.contact}</Link>
                         </li>
                     </ul>
                 </div>

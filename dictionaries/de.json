@@ -1,8 +1,12 @@
 {
     "hero": {
-        "h1": "Hallo, mein Name ist Pascal Harting",
-        "h2": "Fullstack Engineer aus Deutschland",
-        "download": "Lebenslauf downloaden",
-        "info-text": "Ich entwickel schnelle und skalierbare Apps mit dem Optimierungsfokus eines Marketers."
+        "download": "Lebenslauf downloaden"
+    },
+    "navbar": {
+        "home": "Home",
+        "portfolio": "Portfolio",
+        "about": "Über mich",
+        "blog": "Blog",
+        "contact": "Kontakt"
     }
 }

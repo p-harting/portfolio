@@ -4,9 +4,10 @@ import { Locale } from '@/i18n-config';
 export default function LanguageSelector({ currentLang }: { currentLang: Locale }) {
   const router = useRouter();
 
-  const switchLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  const switchLanguage = async (e: React.ChangeEvent<HTMLSelectElement>) => {
     const lang = e.target.value as Locale;
     const path = window.location.pathname.split('/').slice(2).join('/');
+    document.cookie = `NEXT_LOCALE=${lang}; path=/; max-age=${60 * 60 * 24 * 365}`;
     router.push(`/${lang}/${path}`);
   };
 
