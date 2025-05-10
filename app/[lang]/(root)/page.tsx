@@ -1,7 +1,13 @@
 import Hero from "@/components/Hero";
 import { Locale } from "@/i18n-config";
 
-export default function Home({params,}: {params: { lang: Locale };})
+interface PageProps {
+  params: {
+    lang: Locale
+  }
+}
+
+export default function Home({ params }: PageProps)
 {
   return (
     <main className="flex justify-center items-center mt-8">
