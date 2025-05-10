@@ -1,6 +1,13 @@
+"use client";
+
 import Link from "next/link"
+import { useParams } from "next/navigation"
+import { Locale } from "@/i18n-config"
+import LanguageSelector from "./LanguageSelector"
 
 export default function Navbar() {
+  const params = useParams()
+  const currentLang = params?.lang as Locale || 'de'
     return (
         <nav className="flex justify-between items-center mt-8">
             <div className="flex-1 flex justify-center">
@@ -24,9 +31,7 @@ export default function Navbar() {
                     </ul>
                 </div>
             </div>
-            <div className="flex text-white border border-solid border-white rounded-4xl py-4 px-8">
-                <p>DE</p>
-            </div>
+            <LanguageSelector currentLang={currentLang} />
         </nav>
     )
 }
