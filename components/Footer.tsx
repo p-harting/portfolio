@@ -1,4 +1,4 @@
-import { Dictionary, Locale } from "@/i18n-config";
+import { Dictionary } from "@/i18n-config";
 import Link from "next/link";
 
 export default function Footer({ dictionary }: { dictionary: Dictionary["footer"] })
