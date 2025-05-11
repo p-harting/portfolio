@@ -2,6 +2,13 @@ import { readdirSync } from 'fs'
 import path from 'path'
 import { i18n } from '@/i18n-config'
 import type { Locale } from '@/i18n-config'
+import type { Metadata } from 'next'
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string; slug: string }> }): Promise<Metadata> {
+  const { slug } = await params
+  const { metadata } = await import(`@/articles/${slug}.mdx`)
+  return metadata
+}
 
 export default async function Page({ params, }: { params: Promise<{ lang: string; slug: string }>})
 {
