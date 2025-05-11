@@ -1,4 +1,5 @@
-import "@/app/globals.css"
+import "@/app/globals.css";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { hanken } from "@/components/fonts";
 import { i18n, type Locale, Dictionary } from "@/i18n-config";
@@ -23,6 +24,9 @@ export default async function RootLayout (props: {
           <Navbar dictionary={dictionary.navbar}/>
         </header>
         {children}
+        <footer>
+          <Footer dictionary={dictionary.footer}/>
+        </footer>
       </body>
     </html>
   );
