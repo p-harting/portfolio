@@ -8,5 +8,16 @@
         "about": "Über mich",
         "blog": "Blog",
         "contact": "Kontakt"
+    },
+    "footer": {
+        "job": "Full Stack Softwareentwickler",
+        "description": "Entwicklung skalierbarer Plattformen und KI-gestützter Tools. Technische Präzision trifft kreative Problemlösung. Leidenschaft für nutzerzentrierte Lösungen.",
+        "made": "Entwickelt mit ♡ von Pascal Harting",
+        "home": "Home",
+        "portfolio": "Portfolio",
+        "about": "Über mich",
+        "blog": "Blog",
+        "contact": "Kontakt",
+        "socials": "Sociale Medien"
     }
 }

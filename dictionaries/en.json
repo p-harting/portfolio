@@ -8,5 +8,16 @@
         "about": "About",
         "blog": "Blog",
         "contact": "Contact"
+    },
+    "footer": {
+        "job": "Full Stack Software Engineer",
+        "description": "Building scalable platforms and AI-driven tools, balancing technical rigor with creative problem-solving. Passionate about user-centric solutions.",
+        "made": "Made with ♡ by Pascal Harting",
+        "home": "Home",
+        "portfolio": "Portfolio",
+        "about": "About",
+        "blog": "Blog",
+        "contact": "Contact",
+        "socials": "Socials"
     }
 }
