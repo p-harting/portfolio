@@ -4,4 +4,5 @@ export const techstack = [
     {icon: "React", name: "React"},
     {icon: "NextJs", name: "Next.JS"},
     {icon: "Django", name: "Django"},
+    {icon: "SQL", name: "SQL"},
 ]
