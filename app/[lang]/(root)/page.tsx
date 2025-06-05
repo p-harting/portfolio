@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import Tab from "@/components/Tab";
 import TechStack from "@/components/TechStack";
 
 import { Locale, Dictionary } from "@/i18n-config";
@@ -13,6 +14,7 @@ export default async function Home({params,}: {params: Promise<{ lang: Locale }>
     <main className="flex flex-col justify-center items-center mt-8">
       <Hero dictionary={dictionary.hero} currentLang={awaitedParams.lang} />
       <TechStack />
+      <Tab />
     </main>
   );
 }
