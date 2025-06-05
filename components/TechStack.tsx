@@ -1,6 +1,6 @@
 "use client"
 
-import { techstack } from "@/app/[lang]/(root)/techstack";
+import { techstack } from "@/data/techstack";
 import { JavaScriptIcon, PythonIcon, ReactIcon, NextJsIcon, DjangoIcon } from "./Icons";
 import { useState } from "react";
 
