@@ -1,13 +1,14 @@
-import { createClient } from '@/utils/supabase/server';
+//import { createClient } from '@/utils/supabase/server';
+import { portfolio } from "@/data/portfolio";
 
 export default async function Page() {
-    const supabase = await createClient();
-    const { data } = await supabase.from("projects").select();
+    //const supabase = await createClient();
+    //const { data } = await supabase.from("projects").select();
 
-    const projects = data?.map(project => {
+    const projects = portfolio?.map(project => {
       return(
         <div key={project.id}>
-          <h2 className="text-white">{project.name}</h2>
+          <h2 className="text-white">{project.title}</h2>
         </div>
       )
     })
