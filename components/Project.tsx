@@ -11,11 +11,6 @@ interface ProjectProps {
     live_link: string;
 }
 
-const iconComponents: Record<string, React.FC> = {
-    Github: GithubIcon,
-    Play: PlayIcon,
-};
-
 export default function Project({ title, title_image, short_description, stack, github_link, live_link, allign }: ProjectProps) {
     return (
         <div className={`flex ${allign === "right" ? "flex-row" : "flex-row-reverse"} text-white mb-8 max-w-6xl p-4`}>

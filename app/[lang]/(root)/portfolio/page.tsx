@@ -1,8 +1,4 @@
-import Link from "next/link"
-import Image from "next/image"
-
 import { projects } from "@/data/projects"
-import { GithubIcon, PlayIcon } from "@/components/Icons"
 import Project from "@/components/Project"
 
 export default async function Page() {

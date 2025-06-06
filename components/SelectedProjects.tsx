@@ -1,8 +1,5 @@
 import Link from "next/link"
-import Image from "next/image"
-
 import { projects } from "@/data/projects"
-import { GithubIcon, PlayIcon } from "./Icons";
 import Project from "./Project";
 
 export default function SelectedProjects() {
