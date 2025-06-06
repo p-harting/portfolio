@@ -10,7 +10,7 @@ export const portfolio = [
         live_link: "https://supplemint-ff2fe0e93175.herokuapp.com",
         selected: true,
         active: true,
-        allign: "left"
+        allign: "right"
     },
     {
         id: 2,
@@ -23,6 +23,6 @@ export const portfolio = [
         live_link: "https://pascalharting.de",
         selected: true,
         active: true,
-        allign: "right"
+        allign: "left"
     },
 ]
