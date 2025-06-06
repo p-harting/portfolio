@@ -1,22 +1,31 @@
-//import { createClient } from '@/utils/supabase/server';
-import { portfolio } from "@/data/portfolio";
+import Link from "next/link"
+import Image from "next/image"
+
+import { projects } from "@/data/projects"
+import { GithubIcon, PlayIcon } from "@/components/Icons"
+import Project from "@/components/Project"
 
 export default async function Page() {
-    //const supabase = await createClient();
-    //const { data } = await supabase.from("projects").select();
 
-    const projects = portfolio?.map(project => {
+    const projectList = projects?.map(project => {
       return(
-        <div key={project.id}>
-          <h2 className="text-white">{project.title}</h2>
-        </div>
+        <Project
+          key={project.id} 
+          title={project.title}
+          title_image={project.title_image}
+          short_description={project.short_description}
+          stack={project.stack}
+          github_link={project.github_link}
+          live_link={project.live_link}
+          allign={project.allign}
+        />
       )
     })
 
     return (
       <>
         <h1 className="text-8xl text-white">PORTFOLIO</h1>
-        {projects}
+        {projectList}
       </>
     );
   }
